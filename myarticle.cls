@@ -267,8 +267,10 @@
 \renewcommand \thepart {\@Roman\c@part}
 %\renewcommand \thesection {\@arabic\c@section}
 \renewcommand \thesection {\@Roman\c@section}
-\renewcommand\thesubsection   {\thesection.\@arabic\c@subsection}
-\renewcommand\thesubsubsection{\thesubsection .\@arabic\c@subsubsection}
+%\renewcommand\thesubsection   {\thesection.\@arabic\c@subsection}
+\renewcommand\thesubsection   {\@Alph\c@subsection}
+\renewcommand\thesubsubsection{\@arabic\c@subsubsection}
+%\renewcommand\thesubsubsection{\@arabic.\thesubsection\c@subsubsection}
 \renewcommand\theparagraph    {\thesubsubsection.\@arabic\c@paragraph}
 \renewcommand\thesubparagraph {\theparagraph.\@arabic\c@subparagraph}
 \newcommand\part{%
